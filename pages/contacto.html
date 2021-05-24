@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burbujas Mágicas | Contacto</title>
+    <link rel="stylesheet" href="./../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=IBM+Plex+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="./../index.html"><img src="./../images/logo.png" alt="logo" height=210px width=370px></a>
+        </div>
+        <nav class="header__navigation"><!--inicio menu navegable-->
+            <ul id="menu"> 
+                <li><a href="./../index.html">Inicio</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="contacto.html" class="enlaceActivo">Contacto</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+            </ul>
+        </nav><!--fin menu navegable-->
+    </header>
+
+    <section>
+        <h1 class="tituloPrincipal">¡Envianos tu consulta!</h1>
+    </section>    
+
+    <div> <!--subtitulo con flechas en las puntas-->
+        <h2 class="subtitulo">
+            <img src="./../images/flecha-abajo.png" alt="flecha" height="30px" width="30px">
+            Sólo debes completar los datos
+            <img src="./../images/flecha-abajo.png" alt="flecha" height="30px" width="30px">
+        </h2>
+    </div>
+
+    <form> <!--formulario de contacto-->
+        <fieldset>
+            <label for="nombre">Nombre: <input type="text" name="nombre" required></label>
+            <br>
+            <label for="cel">Celular/Teléfono: <input type="text"name="cel" required></label>
+            <br>
+            <label for="email">Email: <input type="text"name="email" placeholder="nombre@ejemplo.com"></label>
+            <br>
+            <label for="seleccionar">Selecciona las opciones que te interesan:</label>
+                <input type="checkbox"><label> Promoción 1</label>
+                <input type="checkbox"><label> Promoción 2</label>
+                <input type="checkbox"><label> Alquiler de salón</label>
+            <br>
+            <label for="mensaje">Dejanos tu mensaje: 
+                <textarea cols="50" rows="4" placeholder="Incluí la fecha o fechas que te interesan" class="tipografiaPlaceholder"></textarea>
+            </label>
+            <br>
+            <input type="submit" name="submit" value="Enviar Formulario" class="button">
+
+            <input type="reset" name="reset" value="Limpiar Formulario" class="button">
+        </fieldset>
+    </form> <!--fin formulario de contacto-->
+
+    <div class="estiloRedesSociales">
+        <p id="subtituloRedes">También podes contactarnos a través de nuestras redes sociales</p>
+        <!--logos clickeables-->
+        <a href="https://www.facebook.com/Burbujas-Magicas-Eventos-151987498167687" target="_blank"><img src="./../images/facebooklogo.png" alt="pag facebook" height=40px width=40px></a>
+        <a href="https://www.instagram.com/burbujasmagicassum/?hl=es" target="_blank"><img src="./../images/instagramlogo.png" alt="pag instagram" height="40px" width="40px"></a>
+        <a href="https://wa.link/nl17gx" target="_blank"><img src="./../images/whatsapplogo.png" alt="link wpp" height="40px" width="40px"></a>
+        <!--fin logos clickeables-->
+    </div>
+
+    <footer class="footer">
+        <h3 class="footer__titles">Burbujas Mágicas</h3> 
+            <p>Festeja tu evento con nosotros! Te ofrecemos lo que necesites para que disfrutes tu fiesta al máximo con todo lo que alguna vez soñaste. Hacemos presupuestos a medida! Consultanos para más información mediante cualquiera de nuestras redes sociales o medios de contacto.</p>
+        <h3 class="footer__titles">Veni a conocernos</h3>
+            <p>Gral. O'Higgins 1128, Ramos Mejía, B1704GVX, La Matanza, Buenos Aires</p>
+        <p><b class="footer__titles">Email:</b> burbujas-magicas@hotmail.com</p>
+        <h5 class="footer__titles--centrado">© Burbujas Mágicas 2021 -- Todos los derechos reservados</h5> 
+    </footer>
+    
+</body>
+</html>

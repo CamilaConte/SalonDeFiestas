@@ -1,0 +1,85 @@
+.header {
+  background-color: rgba(255, 255, 255, 0.788);
+  text-align: center;
+  border-radius: 20px;
+  margin: 10px; }
+  .header .header__navigation #menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .header .header__navigation #menu a {
+      text-decoration: none;
+      font-size: 20px;
+      background-color: #B692BC;
+      border-radius: 10px;
+      text-align: center;
+      color: white;
+      padding: 10px; }
+    .header .header__navigation #menu li {
+      font-weight: bold;
+      width: 120px;
+      height: auto;
+      font-family: "IBM Plex Sans Condensed", sans-serif;
+      padding-bottom: 20px;
+      list-style-type: none;
+      text-decoration: none; }
+
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/29/13/20/balloons-1869790_960_720.jpg);
+  background-size: cover; }
+
+.tituloIndex, .encabezado2 .encabezado2__titulo, .encabezado2 .encabezado2__titulo--mediano {
+  background-color: #B692BC;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: "Boogaloo", cursive;
+  border-radius: 10px; }
+
+.galeria, #mediosPago {
+  background-color: rgba(255, 255, 255, 0.788);
+  padding: 20px; }
+  .galeria .estiloRedes, #mediosPago .estiloRedes {
+    padding-top: 20px;
+    text-align: center; }
+    .galeria .estiloRedes a, #mediosPago .estiloRedes a {
+      padding: 5px; }
+
+.footer {
+  border-top: solid 2px #8E5F95;
+  background-color: #DEC5E3;
+  padding: 20px;
+  width: auto; }
+  .footer .footer__titles1, .footer .footer__titles2 {
+    font-family: "Boogaloo", cursive;
+    color: #8E5F95;
+    font-size: 30px; }
+  .footer p, .footer .footer__titles--centrado {
+    font-size: 20px;
+    text-align: justify;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: bold; }
+  .footer .footer__titles3 {
+    color: #8E5F95;
+    padding: 2px;
+    font-size: 25px;
+    font-family: "Boogaloo", cursive;
+    font-weight: normal; }
+  .footer .footer__titles--centrado {
+    color: #8E5F95;
+    text-align: center; }
+
+.encabezado2 .encabezado2__titulo, .encabezado2 .encabezado2__titulo--mediano {
+  font-size: 40px;
+  font-weight: normal; }
+
+.encabezado2 .encabezado2__titulo--mediano {
+  font-size: 30px; }
+
+#mediosPago {
+  color: white;
+  padding: 10px;
+  background-color: #b0e9ffd2;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center; }

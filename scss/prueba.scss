@@ -1,0 +1,117 @@
+$color-lila: #DEC5E3;
+$color-celeste:  #b0e9ffd2;
+$color-violeta: #B692BC;
+$color-blanco: rgba(255, 255, 255, 0.788);
+$color-violeta-oscuro: #8E5F95;
+$tipografia1: 'IBM Plex Sans Condensed', sans-serif;
+$tipografia2: 'Boogaloo', cursive;
+
+@mixin texto($color, $padding) {
+    color: $color;
+    padding: $padding;
+}
+
+.header{
+    background-color: $color-blanco;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px;
+
+
+    .header__navigation{
+
+        #menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+
+            a{
+            text-decoration: none;
+            font-size: 20px;
+            background-color: $color-violeta;
+            border-radius: 10px;
+            text-align: center;
+            @include texto (white, 10px);
+            }
+
+            li{
+                
+                font-weight: bold;
+                width: 120px;
+                height: auto;
+                font-family: $tipografia1;
+                padding-bottom: 20px;
+                list-style-type: none;
+                text-decoration: none;
+                
+                
+            }
+        }
+    }
+} //1er bloque
+
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/29/13/20/balloons-1869790_960_720.jpg);
+    background-size: cover;
+}
+
+.tituloIndex {
+    background-color: $color-violeta;
+    @include texto(white, 10px);
+    text-align: center;
+    font-family: $tipografia2;
+    border-radius: 10px;
+} //2do bloque
+
+.galeria {
+    background-color: $color-blanco;
+    padding: 20px;
+    .estiloRedes {
+        padding-top: 20px;
+        text-align: center;
+        a {
+            padding: 5px;
+        }
+    }    
+}
+
+.footer {
+    border-top: solid 2px $color-violeta-oscuro;
+    background-color: $color-lila;
+    padding: 20px;
+    width: auto;
+    
+    .footer__titles1 {
+        font-family: $tipografia2;
+        color: $color-violeta-oscuro;
+        font-size: 30px;
+        font-weight: normal;
+    }
+ 
+     p {
+     font-size: 20px;
+     text-align: justify;
+     font-family: $tipografia1;
+     font-weight: bold;
+     }
+ 
+     .footer__titles2 {
+         @extend .footer__titles1;
+     }
+ 
+     .footer__titles3 {
+         @include texto($color-violeta-oscuro, 2px);
+         font-size: 25px;
+         font-family: $tipografia2;
+         font-weight: normal;
+     }
+ 
+     .footer__titles--centrado {
+         @extend p;
+         color: $color-violeta-oscuro;
+         text-align: center;
+     }
+ } //3er bloque
+
+@import "promociones";

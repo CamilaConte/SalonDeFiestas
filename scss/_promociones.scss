@@ -1,0 +1,24 @@
+.encabezado2 {
+
+    .encabezado2__titulo {
+        @extend .tituloIndex;
+        font-size: 40px;
+        font-weight: normal;
+    }
+
+    .encabezado2__titulo--mediano {
+        @extend .encabezado2__titulo;
+        font-size: 30px;
+    }
+    
+} //4to bloque
+
+#mediosPago {
+    @include texto (white, 10px);
+    @extend .galeria;
+    background-color: $color-celeste;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+} //5to bloque
+
