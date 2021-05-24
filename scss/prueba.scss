@@ -16,36 +16,48 @@ $tipografia2: 'Boogaloo', cursive;
     text-align: center;
     border-radius: 20px;
     margin: 10px;
-
+    padding: 10px;
 
     .header__navigation{
 
+        margin: 10px;
         #menu {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-
-
-            a{
-            text-decoration: none;
-            font-size: 20px;
+            justify-items: center;
             background-color: $color-violeta;
             border-radius: 10px;
             text-align: center;
-            @include texto (white, 10px);
+            height: 80px;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                color: white;
+                text-align: center;
             }
+    
 
             li{
                 
                 font-weight: bold;
                 width: 120px;
-                height: auto;
                 font-family: $tipografia1;
                 padding-bottom: 20px;
                 list-style-type: none;
-                text-decoration: none;
-                
-                
+                font-size: 20px;        
+                padding: 20px;    
+            }
+
+            li:hover {
+                background-color: $color-lila;
+                margin: 5px;
+                border-radius: 10px;
+                text-align: center;
+                width: auto;
+                padding: auto;
+                height: auto;
             }
         }
     }
@@ -115,3 +127,5 @@ body {
  } //3er bloque
 
 @import "promociones";
+
+@import "nosotros";

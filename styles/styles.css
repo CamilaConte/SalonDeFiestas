@@ -2,33 +2,46 @@
   background-color: rgba(255, 255, 255, 0.788);
   text-align: center;
   border-radius: 20px;
-  margin: 10px; }
-  .header .header__navigation #menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; }
-    .header .header__navigation #menu a {
-      text-decoration: none;
-      font-size: 20px;
+  margin: 10px;
+  padding: 10px; }
+  .header .header__navigation {
+    margin: 10px; }
+    .header .header__navigation #menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      justify-items: center;
       background-color: #B692BC;
       border-radius: 10px;
       text-align: center;
-      color: white;
-      padding: 10px; }
-    .header .header__navigation #menu li {
-      font-weight: bold;
-      width: 120px;
-      height: auto;
-      font-family: "IBM Plex Sans Condensed", sans-serif;
-      padding-bottom: 20px;
-      list-style-type: none;
-      text-decoration: none; }
+      height: 80px;
+      align-items: center; }
+      .header .header__navigation #menu a {
+        text-decoration: none;
+        color: white;
+        text-align: center; }
+      .header .header__navigation #menu li {
+        font-weight: bold;
+        width: 120px;
+        font-family: "IBM Plex Sans Condensed", sans-serif;
+        padding-bottom: 20px;
+        list-style-type: none;
+        font-size: 20px;
+        padding: 20px; }
+      .header .header__navigation #menu li:hover {
+        background-color: #DEC5E3;
+        margin: 5px;
+        border-radius: 10px;
+        text-align: center;
+        width: auto;
+        padding: auto;
+        height: auto; }
 
 body {
   background-image: url(https://cdn.pixabay.com/photo/2016/11/29/13/20/balloons-1869790_960_720.jpg);
   background-size: cover; }
 
-.tituloIndex, .encabezado2 .encabezado2__titulo, .encabezado2 .encabezado2__titulo--mediano {
+.tituloIndex, .encabezado2 .encabezado2__titulo, .encabezado2 .encabezado2__titulo--mediano, .nosotros .nosotros__titulo {
   background-color: #B692BC;
   color: white;
   padding: 10px;
@@ -53,7 +66,8 @@ body {
   .footer .footer__titles1, .footer .footer__titles2 {
     font-family: "Boogaloo", cursive;
     color: #8E5F95;
-    font-size: 30px; }
+    font-size: 30px;
+    font-weight: normal; }
   .footer p, .footer .footer__titles--centrado {
     font-size: 20px;
     text-align: justify;
@@ -83,3 +97,30 @@ body {
   font-size: 20px;
   font-weight: normal;
   text-align: center; }
+
+.nosotros .nosotros__titulo {
+  font-size: 40px;
+  font-weight: normal; }
+
+.nosotros .nosotros__contenido {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  height: auto; }
+
+.nosotros .nosotros__imagen {
+  background-color: rgba(255, 255, 255, 0.788);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px; }
+
+.nosotros .nosotros__historia {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  background-color: #b0e9ffd2;
+  padding: 60px 50px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px; }

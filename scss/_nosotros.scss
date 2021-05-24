@@ -1,0 +1,36 @@
+.nosotros {
+
+    .nosotros__titulo {
+        @extend .tituloIndex;
+        font-size: 40px;
+        font-weight: normal;
+    }
+
+    .nosotros__contenido {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        height: auto;
+    }
+
+    .nosotros__imagen {
+    background-color: $color-blanco;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    }
+
+    .nosotros__historia {
+        font-family: $tipografia1;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: $color-celeste;
+    padding: 60px 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px; 
+    }
+    
+
+}
