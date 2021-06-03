@@ -1,3 +1,4 @@
+
 .encabezado2 {
 
     .encabezado2__titulo {
@@ -15,10 +16,8 @@
 
 #mediosPago {
     @include texto (white, 10px);
-    @extend .galeria;
     background-color: $color-celeste;
     font-size: 20px;
     font-weight: normal;
     text-align: center;
 } //5to bloque
-

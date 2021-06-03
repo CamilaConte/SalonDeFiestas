@@ -4,59 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="salon, fiesta, infantil, burbujas, magicas, evento, pelotero, reunion">
     <title>Burbujas Mágicas | Contacto</title>
     <link rel="stylesheet" href="./../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=IBM+Plex+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <a href="./../index.html"><img src="./../images/logo.png" alt="logo" height=210px width=370px></a>
+    <header>
+        <div id="logo">
+            <a href="./../index.html"><img src="./../images/logo.png" alt="logo" height=auto width=90%></a>
         </div>
-        <nav class="header__navigation"><!--inicio menu navegable-->
-            <ul id="menu"> 
-                <li><a href="./../index.html">Inicio</a></li>
-                <li><a href="promociones.html">Promociones</a></li>
+        <nav><!--inicio menu navegable-->
+            <ul> 
+                <li><a href="./../index.html" class="enlace" id="bordeRedondeado1">Inicio</a></li>
+                <li><a href="promociones.html" class="enlace">Promociones</a></li>
                 <li><a href="contacto.html" class="enlaceActivo">Contacto</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="nosotros.html" class="enlace">Nosotros</a></li>
+                <li><a href="ubicacion.html" class="enlace" id="bordeRedondeado2">Ubicación</a></li>
             </ul>
         </nav><!--fin menu navegable-->
+        <aside class="estiloRedes"> <!--redes-->
+            <!--logo de face clickeable que direcciona a la pagina del salon, abriendo una nueva pestaña por el "target"-->
+            <a href="https://www.facebook.com/Burbujas-Magicas-Eventos-151987498167687" target="_blank"><img src="./../images/facebooklogocolor.png" alt="pag facebook" height=40px width=40px></a>
+            <a href="https://www.instagram.com/burbujasmagicassum/?hl=es" target="_blank"><img src="./../images/instagramlogocolor.png" alt="pag instagram" height="40px" width="40px"></a>
+        </aside>
     </header>
 
     <section>
-        <h1 class="tituloPrincipal">¡Envianos tu consulta!</h1>
+        <h1 class="tituloPrincipal">
+            <div class="animate__animated animate__bounceIn">
+                ¡Envianos tu consulta!
+            </div>
+        </h1>
     </section>    
 
     <div> <!--subtitulo con flechas en las puntas-->
         <h2 class="subtitulo">
-            <img src="./../images/flecha-abajo.png" alt="flecha" height="30px" width="30px">
-            Sólo debes completar los datos
-            <img src="./../images/flecha-abajo.png" alt="flecha" height="30px" width="30px">
+            <div class="animate__animated animate__fadeIn">
+                <img src="./../images/flecha-abajo.png" alt="flecha" height="30px" width="30px">
+                Sólo debes completar los datos
+                <img src="./../images/flecha-abajo.png" alt="flecha" height="30px" width="30px">
+            </div>
         </h2>
     </div>
 
     <form> <!--formulario de contacto-->
         <fieldset>
             <label for="nombre">Nombre: <input type="text" name="nombre" required></label>
-            <br>
             <label for="cel">Celular/Teléfono: <input type="text"name="cel" required></label>
-            <br>
             <label for="email">Email: <input type="text"name="email" placeholder="nombre@ejemplo.com"></label>
-            <br>
             <label for="seleccionar">Selecciona las opciones que te interesan:</label>
-                <input type="checkbox"><label> Promoción 1</label>
-                <input type="checkbox"><label> Promoción 2</label>
-                <input type="checkbox"><label> Alquiler de salón</label>
-            <br>
-            <label for="mensaje">Dejanos tu mensaje: 
+                <div>
+                    <input type="checkbox" id="promo1"><label> Promoción 1</label>&nbsp;&nbsp;
+                    <input type="checkbox" id="promo2"><label> Promoción 2</label>&nbsp;&nbsp;
+                    <input type="checkbox" id="alquiler"><label> Alquiler de salón</label>&nbsp;&nbsp;
+                </div>
+            <label for="mensaje">Dejanos tu mensaje:
+                <br> 
                 <textarea cols="50" rows="4" placeholder="Incluí la fecha o fechas que te interesan" class="tipografiaPlaceholder"></textarea>
             </label>
-            <br>
-            <input type="submit" name="submit" value="Enviar Formulario" class="button">
-
-            <input type="reset" name="reset" value="Limpiar Formulario" class="button">
+            <div class="botonesForm">
+                <input type="submit" name="submit" value="Enviar Formulario" class="botonEnviar">
+                <input type="reset" name="reset" value="Limpiar Formulario" class="botonLimpiar">
+            </div>
         </fieldset>
     </form> <!--fin formulario de contacto-->
 
@@ -69,14 +81,19 @@
         <!--fin logos clickeables-->
     </div>
 
-    <footer class="footer">
-        <h3 class="footer__titles">Burbujas Mágicas</h3> 
-            <p>Festeja tu evento con nosotros! Te ofrecemos lo que necesites para que disfrutes tu fiesta al máximo con todo lo que alguna vez soñaste. Hacemos presupuestos a medida! Consultanos para más información mediante cualquiera de nuestras redes sociales o medios de contacto.</p>
-        <h3 class="footer__titles">Veni a conocernos</h3>
-            <p>Gral. O'Higgins 1128, Ramos Mejía, B1704GVX, La Matanza, Buenos Aires</p>
-        <p><b class="footer__titles">Email:</b> burbujas-magicas@hotmail.com</p>
-        <h5 class="footer__titles--centrado">© Burbujas Mágicas 2021 -- Todos los derechos reservados</h5> 
+    <footer>
+        <div class="textoFooterIzq">
+            <h3 class="footerTitles">Burbujas Mágicas</h3>
+                <p>Festeja tu evento con nosotros! Te ofrecemos lo que necesites para que disfrutes tu fiesta al máximo con todo lo que alguna vez soñaste. Hacemos presupuestos a medida! Consultanos para más información mediante cualquiera de nuestras redes sociales o medios de contacto.</p>
+        </div>
+        <div class="textoFooterDer">   
+            <h3 class="footerTitles">Veni a conocernos</h3>
+                <p>Gral. O'Higgins 1128, Ramos Mejía, B1704GVX, La Matanza, Buenos Aires</p>
+            <p><b class="footerTitles">Email:</b> burbujas-magicas@hotmail.com</p>
+        </div>
+            <h5 class="derechosAutor">© Burbujas Mágicas 2021 -- Todos los derechos reservados</h5>
     </footer>
+    
     
 </body>
 </html>

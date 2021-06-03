@@ -1,0 +1,14 @@
+.tituloIndex {
+    background-color: $color-violeta;
+    @include texto(rgb(255, 255, 255), 10px);
+    text-align: center;
+    font-family: $tipografia2;
+    font-size: 5rem;
+    font-weight: normal;
+}
+
+#carouselExampleIndicators {
+    padding: 5rem;
+    background-color: #dacfead0;
+    margin-bottom: 0.5rem;
+}

@@ -4,61 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="salon, fiesta, infantil, burbujas, magicas, evento, pelotero, reunion">
     <title>Burbujas Mágicas | Ubicación</title>
     <link rel="stylesheet" href="./../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=IBM+Plex+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <a href="./../index.html"><img src="./../images/logo.png" alt="logo" height=210px width=370px></a>
+    <header>
+        <div id="logo">
+            <a href="./../index.html"><img src="./../images/logo.png" alt="logo" height=auto width=90%></a>
         </div>
-        <nav class="header__navigation">  <!--inicio menu navegable-->
-            <ul id="menu">
-                <li><a href="./../index.html">Inicio</a></li>
-                <li><a href="promociones.html">Promociones</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="ubicacion.html" class="enlaceActivo">Ubicación</a></li>
+        <nav>  <!--inicio menu navegable-->
+            <ul>
+                <li><a href="./../index.html" class="enlace" id="bordeRedondeado1">Inicio</a></li>
+                <li><a href="promociones.html" class="enlace">Promociones</a></li>
+                <li><a href="contacto.html" class="enlace">Contacto</a></li>
+                <li><a href="nosotros.html" class="enlace">Nosotros</a></li>
+                <li><a href="ubicacion.html" class="enlaceActivo" id="bordeRedondeado2">Ubicación</a></li>
             </ul>
         </nav> <!--fin menu navegable-->
+        <aside class="estiloRedes"> <!--redes-->
+            <!--logo de face clickeable que direcciona a la pagina del salon, abriendo una nueva pestaña por el "target"-->
+            <a href="https://www.facebook.com/Burbujas-Magicas-Eventos-151987498167687" target="_blank"><img src="./../images/facebooklogocolor.png" alt="pag facebook" height=40px width=40px></a>
+            <a href="https://www.instagram.com/burbujasmagicassum/?hl=es" target="_blank"><img src="./../images/instagramlogocolor.png" alt="pag instagram" height="40px" width="40px"></a>
+        </aside>
     </header>
 
     <section>
-        <h1 class="tituloPrincipal">¡Te ayudamos a encontrarnos!</h1>
+        <h1 class="tituloPrincipal">
+            <div class="animate__animated animate__bounceIn">
+                ¡Te ayudamos a encontrarnos!
+            </div>
+        </h1>
     </section>
 
-    <div id="mapa"><!--mapa en google maps-->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3298124078065!2d-58.54349258476914!3d-34.646372780448445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc86da33baefb%3A0x3683ce1286309ec3!2sGral.%20O&#39;Higgins%201128%2C%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1616986917638!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="contenidoUbicacion">
+        <div class="mapa"><!--mapa en google maps-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3298124078065!2d-58.54349258476914!3d-34.646372780448445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc86da33baefb%3A0x3683ce1286309ec3!2sGral.%20O&#39;Higgins%201128%2C%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1616986917638!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div id="datosAdicionales"><!--datos adicionales-->
+            <div class="animate__animated animate__fadeInRight">
+                <p>
+                    <img src="./../images/mapmarker.png" alt="marcador" height=35px width="35px">&nbsp;Gral. O'Higgins 1128, Ramos Mejía, La Matanza, Buenos Aires
+                </p>
+                <p>
+                    <img src="./../images/clock.png" alt="reloj" height="35px" width="35px">&nbsp; Lunes a Sábados de 17.30hs a 20.30hs
+                </p>
+                <p>    
+                    <img src="./../images/car.png" alt="auto" height="35px" width="35px">&nbsp;<a href="https://www.google.com/maps/dir//-34.6463728,-58.5413039/@-34.646373,-58.541304,16z?hl=es-419" target="_blank" id="comoLlegar"> Cómo llegar</a>
+                </p>
+                <p>
+                    <img src="./../images/bus.png" alt="colectivos" height="35px" width="35px">&nbsp;Colectivos que te alcanzan: 237-242A-284A-284B-620M-620N (Av. Diaz Vélez Y O'Higgins)
+                </p>
+        </div>
+        </div><!--fin de datos adicionales-->
     </div>
 
-    <div id="datosAdicionales"><!--datos adicionales-->
-        <p>
-            <img src="./../images/mapmarker.png" alt="marcador" height=35px width="35px">&nbsp;&nbsp;Gral. O'Higgins 1128, Ramos Mejía, La Matanza, Buenos Aires
-        </p>
-        <br><br>
-        <p>
-            <img src="./../images/clock.png" alt="reloj" height="35px" width="35px">&nbsp;&nbsp;Lunes a Sábados de 17.30hs a 20.30hs
-        </p>
-        <br><br>
-        <p>    
-            <img src="./../images/car.png" alt="auto" height="35px" width="35px"><a href="https://www.google.com/maps/dir//-34.6463728,-58.5413039/@-34.646373,-58.541304,16z?hl=es-419" target="_blank" id="comoLlegar">&nbsp;&nbsp;Cómo llegar</a>
-        </p>
-        <br><br>
-        <p>
-            <img src="./../images/bus.png" alt="colectivos" height="35px" width="35px">&nbsp;&nbsp;Colectivos que te alcanzan: 237-242A-284A-284B-620M-620N (Av. Diaz Vélez Y O'Higgins)
-        </p>
-    </div><!--fin de datos adicionales-->
-
-    <footer class="footer">
-        <h3 class="footer__titles">Burbujas Mágicas</h3> 
-            <p>Festeja tu evento con nosotros! Te ofrecemos lo que necesites para que disfrutes tu fiesta al máximo con todo lo que alguna vez soñaste. Hacemos presupuestos a medida! Consultanos para más información mediante cualquiera de nuestras redes sociales o medios de contacto.</p>
-        <h3 class="footer__titles">Veni a conocernos</h3>
-            <p>Gral. O'Higgins 1128, Ramos Mejía, B1704GVX, La Matanza, Buenos Aires</p>
-        <p><b class="footer__titles">Email:</b> burbujas-magicas@hotmail.com</p>
-        <h5 class="footer__titles--centrado">© Burbujas Mágicas 2021 -- Todos los derechos reservados</h5> 
+    <footer>
+        <div class="textoFooterIzq">
+            <h3 class="footerTitles">Burbujas Mágicas</h3>
+                <p>Festeja tu evento con nosotros! Te ofrecemos lo que necesites para que disfrutes tu fiesta al máximo con todo lo que alguna vez soñaste. Hacemos presupuestos a medida! Consultanos para más información mediante cualquiera de nuestras redes sociales o medios de contacto.</p>
+        </div>
+        <div class="textoFooterDer">   
+            <h3 class="footerTitles">Veni a conocernos</h3>
+                <p>Gral. O'Higgins 1128, Ramos Mejía, B1704GVX, La Matanza, Buenos Aires</p>
+            <p><b class="footerTitles">Email:</b> burbujas-magicas@hotmail.com</p>
+        </div>
+            <h5 class="derechosAutor">© Burbujas Mágicas 2021 -- Todos los derechos reservados</h5>
     </footer>
 
+    
 </body>
 </html>

@@ -1,45 +1,101 @@
-.header {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  /*el rem se toma de a 10px*/ }
+
+header {
   background-color: rgba(255, 255, 255, 0.788);
   text-align: center;
-  border-radius: 20px;
-  margin: 10px;
-  padding: 10px; }
-  .header .header__navigation {
-    margin: 10px; }
-    .header .header__navigation #menu {
+  border-radius: 2rem;
+  width: auto;
+  height: 50%;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 45% 30% 1% 25%;
+  grid-template-areas: "logo menu espacio redes";
+  align-items: center; }
+  header #logo {
+    text-align: center;
+    grid-area: logo;
+    /*posicionamiento del logo*/ }
+  header .estiloRedes {
+    /*redes sociales al lado del menu*/
+    text-align: center;
+    word-spacing: 2rem;
+    text-align: right;
+    padding-right: 5rem;
+    grid-area: redes; }
+  header nav {
+    grid-area: menu;
+    /*estilo de menu*/ }
+    header nav .enlace, header nav .enlaceActivo {
+      text-decoration: none;
+      font-family: "IBM Plex Sans Condensed", sans-serif;
+      font-size: 2rem;
+      text-align: center;
+      color: #65bfe2;
+      font-weight: bold;
+      padding: 1.2rem; }
+    header nav ul {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+      list-style-type: none;
       justify-items: center;
-      background-color: #B692BC;
-      border-radius: 10px;
-      text-align: center;
-      height: 80px;
-      align-items: center; }
-      .header .header__navigation #menu a {
-        text-decoration: none;
-        color: white;
-        text-align: center; }
-      .header .header__navigation #menu li {
-        font-weight: bold;
-        width: 120px;
-        font-family: "IBM Plex Sans Condensed", sans-serif;
-        padding-bottom: 20px;
-        list-style-type: none;
-        font-size: 20px;
-        padding: 20px; }
-      .header .header__navigation #menu li:hover {
-        background-color: #DEC5E3;
-        margin: 5px;
-        border-radius: 10px;
-        text-align: center;
-        width: auto;
-        padding: auto;
-        height: auto; }
+      justify-content: left;
+      width: 100%; }
+    header nav .enlace:hover {
+      background-color: #8bcbe5;
+      color: white;
+      border-radius: 1rem; }
+    header nav .enlaceActivo {
+      background-color: #8bcbe5;
+      color: white;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem; }
 
 body {
   background-image: url(https://cdn.pixabay.com/photo/2016/11/29/13/20/balloons-1869790_960_720.jpg);
-  background-size: cover; }
+  background-size: cover;
+  margin: 0px; }
+
+footer {
+  width: 100%;
+  height: 25rem;
+  background-color: #DEC5E3;
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  display: grid;
+  grid-template-areas: "textoIzq textoIzq textoDerecha" "textoIzq textoIzq textoDerecha" "derechosAutor derechosAutor derechosAutor";
+  border-top: solid 2px #8E5F95;
+  /*linea derechos de autor*/ }
+  footer .textoFooterDer {
+    grid-area: textoDerecha;
+    padding: 3rem;
+    width: 45rem;
+    text-align: right; }
+  footer .textoFooterIzq {
+    grid-area: textoIzq;
+    text-align: justify;
+    width: 75rem;
+    padding: 3rem; }
+  footer .footerTitles {
+    color: #8E5F95;
+    font-family: "Boogaloo", cursive;
+    font-size: 2.5rem;
+    font-weight: normal; }
+  footer .derechosAutor {
+    color: #8E5F95;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    grid-area: derechosAutor; }
 
 .tituloIndex, .encabezado2 .encabezado2__titulo, .encabezado2 .encabezado2__titulo--mediano, .nosotros .nosotros__titulo {
   background-color: #B692BC;
@@ -47,41 +103,13 @@ body {
   padding: 10px;
   text-align: center;
   font-family: "Boogaloo", cursive;
-  border-radius: 10px; }
+  font-size: 5rem;
+  font-weight: normal; }
 
-.galeria, #mediosPago {
-  background-color: rgba(255, 255, 255, 0.788);
-  padding: 20px; }
-  .galeria .estiloRedes, #mediosPago .estiloRedes {
-    padding-top: 20px;
-    text-align: center; }
-    .galeria .estiloRedes a, #mediosPago .estiloRedes a {
-      padding: 5px; }
-
-.footer {
-  border-top: solid 2px #8E5F95;
-  background-color: #DEC5E3;
-  padding: 20px;
-  width: auto; }
-  .footer .footer__titles1, .footer .footer__titles2 {
-    font-family: "Boogaloo", cursive;
-    color: #8E5F95;
-    font-size: 30px;
-    font-weight: normal; }
-  .footer p, .footer .footer__titles--centrado {
-    font-size: 20px;
-    text-align: justify;
-    font-family: "IBM Plex Sans Condensed", sans-serif;
-    font-weight: bold; }
-  .footer .footer__titles3 {
-    color: #8E5F95;
-    padding: 2px;
-    font-size: 25px;
-    font-family: "Boogaloo", cursive;
-    font-weight: normal; }
-  .footer .footer__titles--centrado {
-    color: #8E5F95;
-    text-align: center; }
+#carouselExampleIndicators {
+  padding: 5rem;
+  background-color: #dacfead0;
+  margin-bottom: 0.5rem; }
 
 .encabezado2 .encabezado2__titulo, .encabezado2 .encabezado2__titulo--mediano {
   font-size: 40px;
@@ -93,7 +121,7 @@ body {
 #mediosPago {
   color: white;
   padding: 10px;
-  background-color: #b0e9ffd2;
+  background-color: #8bcbe5;
   font-size: 20px;
   font-weight: normal;
   text-align: center; }
@@ -120,7 +148,7 @@ body {
   font-size: 25px;
   font-weight: bold;
   color: white;
-  background-color: #b0e9ffd2;
+  background-color: #8bcbe5;
   padding: 60px 50px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px; }
