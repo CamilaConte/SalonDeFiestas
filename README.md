@@ -1,0 +1,1 @@
+Presento el sitio web del salón de fiestas infantiles "Burbujas Mágicas", ubicado en Ramos Mejía, Buenos Aires. Desde este sitio, el público puede conocer el salón por dentro a través de las fotos que se muestran, así como también, consultar por las promociones vigentes y contactarse con sus dueños para consultar disponibilidad y reservar su fecha!
