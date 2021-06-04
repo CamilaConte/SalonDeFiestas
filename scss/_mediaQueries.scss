@@ -1,0 +1,374 @@
+/*inicio 320px*/
+@media screen and (max-width: 320px) {
+    body {
+        width: auto;
+    }
+
+    header {
+        width: auto;
+        height: 50%;
+        margin: 1rem;
+        border-radius: 2rem;
+        background-color: $color-blanco;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    
+    }
+
+    .tituloIndex {
+        font-size: 4rem;
+    }
+
+
+
+    footer {
+        width: auto;
+        height: 40%;
+
+        .textoFooterDer {
+            padding-top: 2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            width: auto;
+            text-align: left;
+        }
+        
+        .textoFooterIzq {
+            text-align: justify;
+            width: auto;
+            padding-left: 2rem;
+            padding-top: 2rem;
+            padding-right: 2rem;
+        }
+    
+        .derechosAutor{
+            font-family: $tipografia1;
+            font-size: 1.5rem;
+            text-align: center;
+            font-weight: bold;
+            @include texto ($color-violeta-oscuro, 2rem);
+        }
+    }
+
+    
+}
+/*fin 320px*/
+
+/*inicio 768px*/
+@media screen and (max-width: 768px) { /*es recomendable usar grid en el body para despues poder organizar el reponsive*/
+    body {
+        width: auto;
+    }
+    
+    header {
+        width: auto;
+        height: 50%;
+        margin: 2rem 4rem 2rem 4rem;
+        border-radius: 2rem;
+        background-color: $color-blanco;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+
+        #logo {
+            text-align: center;
+            width: 100%;
+        }
+        
+        nav{
+            ul {
+                display: flex;
+                flex-direction: column;
+                list-style-type: none;
+                justify-items: center; 
+                justify-content: center;
+                text-align: center;
+                padding: auto;
+                width: auto;
+                line-height: 5rem;
+    
+                .enlace:hover {
+                    background-color: $color-celeste;
+                    color: white;
+                    border-radius: 1rem;
+                }
+                
+                
+                .enlaceActivo {
+                    background-color: $color-celeste;
+                    color: white;
+                    border-radius: 1rem;
+                }
+            }
+        } 
+        
+    
+        /*redes sociales al lado del menu*/
+        .estiloRedes {
+            text-align: center;
+            word-spacing: 2rem;
+            padding: 3rem;
+        }
+
+    }
+
+
+
+    #carouselExampleIndicators {
+        padding: 1.5rem;
+    }
+
+    #table {
+        margin: 1rem;
+        width: auto;
+    }
+
+
+
+    main {
+        .nosotros {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            #historia {
+                border-top-left-radius: 2rem;
+                border-bottom-right-radius: 2rem;
+                border-top-right-radius: 2rem;
+                border-bottom-left-radius: 2rem;
+            }
+
+
+            .mickey {
+                border-radius: 2rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+ 
+.contenidoUbicacion {
+    .mapa iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .mapa {
+        width: 100%;
+        height: auto;
+    }
+}
+    
+}
+/*fin 768px*/
+
+
+/*inicio 1024px*/
+@media screen and (max-width:1024px) {
+
+    body {
+        width: auto;
+    }
+    header {
+        width: auto;
+        height: 50%;
+        margin: 1rem;
+        border-radius: 2rem;
+        background-color: rgba(255, 255, 255, 0.76);
+        display: grid;
+        grid-template-columns: 45% 10% 25%;
+        grid-template-areas: 
+            "logo espacio menu"
+            "logo espacio redes";
+
+            .estiloRedes {
+                padding-right: 3rem;
+                grid-area: redes;
+                justify-self: center;
+            }
+        
+            nav {
+                grid-area: menu;
+                justify-self: center;
+            }
+        
+            #logo {
+                grid-area: logo;
+            }
+    }
+
+    #table {
+        .consultarPrecios {
+            margin-top: 2rem;
+        }
+    }
+
+
+    form fieldset {
+        line-height: 4;
+        padding: auto;
+        text-align: center;
+        margin: auto;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        
+    
+    .nosotros {
+        background-color: $color-celeste;
+        border-radius: 2rem;
+        text-align: justify;
+
+        .mickey {
+            background-color: $color-celeste;
+            margin-left: 2rem;
+            border-radius: 2rem;
+        }
+    }
+
+
+    .contenidoUbicacion {
+        display: flex;
+        flex-direction: column;
+
+        .mapa {
+            padding: 1rem;
+        }
+    
+    }
+
+
+}
+/*fin 1024px*/
+
+
+/*inicio 1270px*/
+@media screen and (max-width: 1270px) {
+    body {
+        width: auto;
+    }
+    header {
+        width: auto;
+        height: 50%;
+        margin: 1rem;
+        border-radius: 2rem;
+        background-color: rgba(255, 255, 255, 0.76);
+        display: grid;
+        grid-template-columns: 45% 10% 25%;
+        grid-template-areas: 
+            "logo espacio menu"
+            "logo espacio redes";
+    }
+
+    .estiloRedes {
+        padding-right: 3rem;
+        grid-area: redes;
+        justify-self: center;
+    }
+
+    nav {
+        grid-area: menu;
+        justify-self: center;
+        margin-right: 2rem;
+    }
+
+    #logo {
+        grid-area: logo;
+        text-align: left;
+        width: auto;
+    }
+
+    .galeria {
+        flex-wrap: wrap;
+    }
+
+    .contenidoUbicacion {
+        border-radius: 2rem;
+        background-color: #e2db96cb;
+
+        #datosAdicionales {
+            background-color: #d6d9f000;
+        }
+    
+        .mapa {
+            padding-left: 2rem;
+        }
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: $color-lila;
+        font-size: 1.8rem;
+        color:rgb(26, 26, 26);
+        font-family: $tipografia1;
+        font-weight: bold;
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        border-top: solid 2px $color-violeta-oscuro;
+
+        .textoFooterDer {
+            padding-top: 2rem;
+            padding-left: 4rem;
+            width: auto;
+        }
+        
+        .textoFooterIzq {
+            text-align: justify;
+            width: auto;
+            padding-left: 4rem;
+            padding-top: 2rem;
+        }
+    
+        .derechosAutor{
+            color: $color-violeta-oscuro;
+            font-family: $tipografia1;
+            font-size: 1.5rem;
+            text-align: center;
+            padding-top: 4rem;
+            padding-bottom: 2rem;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1270px) {
+    footer {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-areas: 
+            "textoIzq textoIzq textoDerecha"
+            "textoIzq textoIzq textoDerecha"
+            "derechosAutor derechosAutor derechosAutor";
+
+        .textoFooterDer {
+            grid-area: textoDerecha;
+            padding-top: 2rem;
+            padding-left: 4rem;
+            width: auto;
+            text-align: right;
+        }
+        
+        .textoFooterIzq {
+            grid-area: textoIzq;
+            text-align: justify;
+            width: auto;
+            padding-left: 4rem;
+            padding-top: 2rem;
+        }
+    }
+
+    
+    
+   
+    
+}
+/*fin 1270px*/

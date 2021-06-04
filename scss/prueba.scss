@@ -43,9 +43,8 @@ header{
 
     
     .estiloRedes { /*redes sociales al lado del menu*/
-        text-align: center;
-        word-spacing: 2rem;
         text-align: right;
+        word-spacing: 2rem;
         padding-right: 5rem;
         grid-area: redes;
     }
@@ -148,8 +147,14 @@ footer {
     }
  } 
 
+@import "nosotros";
+
 @import "index";
 
 @import "promociones";
 
-@import "nosotros";
+@import "contacto";
+
+@import "ubicacion";
+
+@import "mediaQueries";

@@ -1,0 +1,80 @@
+div { //subtitulo de contacto
+    .subtitulo {
+        font-family: $tipografia2;
+        text-align: center;
+        background-color: $color-violeta-oscuro;
+        font-weight: normal;
+        @include texto (white, 1rem);
+        margin: 0;
+        font-size: 2.7rem;
+    }
+}
+
+form {
+    fieldset {
+        background-color: #cdedfdec;
+        font-size: 1.8rem;
+        font-family: $tipografia1;
+        font-weight: bold;
+        line-height: 4;
+        border: solid 3px $color-violeta-oscuro;
+        padding: 2rem;
+        text-align: center;
+        margin: 2rem 20rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .botonesForm {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            input {
+                border-radius: 0.5rem;
+                height: 3rem;
+                background-color: $color-violeta-oscuro;
+                font-family: $tipografia1;
+                font-size: 1.5rem;
+                text-align: center;
+                font-weight: bold;
+                border: outset 2px $color-violeta;
+                @include texto (white, 0.6rem);
+                margin-left: 1rem;
+                margin-right: 1rem;
+                padding: 0.4rem;
+            }
+        }
+
+        textarea {
+            border-radius: 0.5rem;
+            border: solid 0.2rem $color-violeta-oscuro;
+            height: 10rem;           
+        }
+
+        .tipografiaPlaceholder {
+            font-family: $tipografia1;
+            letter-spacing: 0,1rem;
+            font-size: 1.5rem;
+        }
+
+        input { //estilo de los cuadros donde se completan datos 
+            border-radius: 0.5rem;
+            border: solid 0.2rem $color-violeta-oscuro;
+            height: 2.3rem;
+        }
+    }
+}
+
+.estiloRedesSociales {
+    @extend #mediosPago;
+    word-spacing: 1rem;
+    line-height: 4;
+
+    #subtituloRedes {
+        @extend #subtituloPagos;
+        padding: 0;
+    }
+}

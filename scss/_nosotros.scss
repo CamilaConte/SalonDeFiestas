@@ -1,36 +1,39 @@
-.nosotros {
-
-    .nosotros__titulo {
-        @extend .tituloIndex;
-        font-size: 40px;
+main {
+    .tituloPrincipal {
+        font-family: $tipografia2;
+        text-align: center;
+        background-color: $color-violeta-oscuro;
         font-weight: normal;
+        font-size: 4rem;
+        @include texto (white, 1rem);
     }
 
-    .nosotros__contenido {
+    .nosotros {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin: 20px;
+        margin: 2rem;
         height: auto;
-    }
+        
 
-    .nosotros__imagen {
-    background-color: $color-blanco;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+        .mickey {
+            background-color: rgba(255, 255, 255, 0.555);
+            border-top-left-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+        }
+        
+        
+        #historia {
+            font-family: $tipografia1;
+            font-size: 2.5rem;
+            font-weight: bold;
+            background-color: $color-celeste;
+            @include texto (white, 5.5rem);
+            border-top-right-radius: 2rem;
+            border-bottom-right-radius: 2rem; 
+            text-align: justify;
+        }
     }
-
-    .nosotros__historia {
-        font-family: $tipografia1;
-    font-size: 25px;
-    font-weight: bold;
-    color: white;
-    background-color: $color-celeste;
-    padding: 60px 50px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px; 
-    }
-    
-
 }
+
