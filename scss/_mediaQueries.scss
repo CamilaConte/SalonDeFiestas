@@ -160,17 +160,17 @@
 .contenidoUbicacion {
     padding-right: 1rem;
     padding-top: 1rem;
+    
+    .mapa iframe {
+        width: 100%;
+        height: auto;
+    }
 
     .mapa {
         width: 100%;
         height: auto;
     }
-
-    .mapa iframe {
-        width: 100%;
-        height: auto;
-    }   
-
+} 
 }
     
 }
