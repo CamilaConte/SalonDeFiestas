@@ -400,7 +400,8 @@ form fieldset {
   .contenidoUbicacion {
     padding-right: 1rem;
     padding-top: 1rem; }
-    .contenidoUbicacion .mapa iframe {
+    .contenidoUbicacion .mapa .mapa iframe {
+      width: 100%;
       height: 25rem; } }
 
 /*fin 768px*/
