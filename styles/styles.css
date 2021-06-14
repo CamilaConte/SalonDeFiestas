@@ -382,6 +382,8 @@ form fieldset {
   #table {
     margin: 1rem;
     width: auto; }
+  form fieldset {
+    padding: 0rem; }
   main .nosotros {
     display: flex;
     flex-direction: column;
@@ -395,12 +397,11 @@ form fieldset {
     main .nosotros .mickey {
       border-radius: 2rem;
       margin-top: 2rem; }
-  .contenidoUbicacion .mapa iframe {
-    width: 100%;
-    height: auto; }
-  .contenidoUbicacion .mapa {
-    width: 100%;
-    height: auto; } }
+  .contenidoUbicacion {
+    padding-right: 1rem;
+    padding-top: 1rem; }
+    .contenidoUbicacion .mapa iframe {
+      height: 25rem; } }
 
 /*fin 768px*/
 /*inicio 1024px*/

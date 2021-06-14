@@ -126,6 +126,13 @@
         width: auto;
     }
 
+    //formulario de contacto
+    form {
+        fieldset{
+            padding:0rem;
+        }
+    }
+
 
 
     main {
@@ -151,15 +158,12 @@
     }
  
 .contenidoUbicacion {
+    padding-right: 1rem;
+    padding-top: 1rem;
     .mapa iframe {
-        width: 100%;
-        height: auto;
-    }
-
-    .mapa {
-        width: 100%;
-        height: auto;
-    }
+       
+        height: 25rem;
+    }   
 }
     
 }
