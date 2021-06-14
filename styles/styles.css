@@ -405,7 +405,7 @@ form fieldset {
       height: auto; }
     .contenidoUbicacion .mapa iframe {
       width: 100%;
-      height: 25rem; } }
+      height: auto; } }
 
 /*fin 768px*/
 /*inicio 1024px*/
